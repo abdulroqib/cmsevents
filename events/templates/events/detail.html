@@ -1,0 +1,19 @@
+{% extends 'events/base.html' %}
+
+{% block events_content %}
+<div class="row">
+    <div class="col-sm-12">
+        <h4 class="d-flex justify-content-center align-items-center">
+            <span class="text-muted">{{ event.title }}</span>
+        </h4>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-center">
+                <h6 class="my-0">{{ event.datetime }}</h6>
+            </li>
+            <li class="list-group-item d-flex justify-content-center">
+                <p>{{ event.description }}</p>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% load cms_tags %}
+<div class="row">
+    <div class="col-sm-12">
+        <h4 class="d-flex justify-content-center align-items-center">
+            <span class="text-muted">Featured Events</span>
+        </h4>
+        <ul class="list-group">
+            {% for plugin in instance.child_plugin_instances %}
+                {% render_plugin plugin %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>
